@@ -1,44 +1,33 @@
-# eddacraft-tui
+# eddacraft
 
-Shared Ratatui component library for the EddaCraft product family.
+Tools for governing AI-assisted work.
 
-## Modules
+---
 
-- **`theme/`** — EddaCraft Terminal Standard colour palette, theme trait, and
-  brand theming
-- **`keyboard/`** — key binding definitions and action mapping
-- **`widgets/`** — reusable TUI widgets (tables, badges, charts, panels)
-- **`surface.rs`** — base `Surface` trait for TUI screens
-- **`shell.rs`** — shared shell chrome renderer
+## Products
 
-## Design System
+### [Anvil](https://github.com/EddaCraft/anvil)
+Deterministic governance for AI-assisted software development. Validates code, infrastructure, and behaviour against defined policies in real time — ensuring AI-generated outputs remain compliant, consistent, and production-ready.
 
-Implements the EddaCraft Terminal Standard:
+→ [Join the waitlist](https://eddacraft.ai)
 
-| Token       | Colour               |
-| ----------- | -------------------- |
-| Void        | `rgb(13, 13, 15)`    |
-| Structure   | `rgb(42, 42, 46)`    |
-| Off-White   | `rgb(235, 235, 235)` |
-| Ghost Grey  | `rgb(133, 133, 138)` |
-| Anvil Ember | `rgb(204, 85, 0)`    |
-| Edda Growth | `rgb(46, 139, 87)`   |
-| Brick Red   | `rgb(201, 74, 74)`   |
-| Dull Amber  | `rgb(208, 140, 56)`  |
+---
 
-## Usage
+## Open Source
 
-```toml
-[dependencies]
-eddacraft-tui = "0.1"
-```
+### [eddacraft-tui](https://github.com/EddaCraft/eddacraft-tui)
+Shared Ratatui component library for the EddaCraft product family. A consistent set of terminal UI building blocks — themed widgets, keyboard handling, shell chrome, and surface abstraction.
 
-```rust
-use eddacraft_tui::prelude::*;
+### [anvil-plan-spec](https://github.com/EddaCraft/anvil-plan-spec)
+Lightweight open specification for planning and task authorisation in AI-assisted development. Apache 2.0.
 
-let theme = EddaCraftTheme;
-```
+### [kindling](https://github.com/EddaCraft/kindling)
+Small, composable memory primitives for agentic workflows. Apache 2.0.
 
-## Licence
+---
 
-Apache-2.0
+## About
+
+eddacraft is an independent product entity building governance infrastructure for AI-assisted software teams.
+
+[eddacraft.ai](https://eddacraft.ai) · [anvil waitlist](https://eddacraft.ai#waitlist)
